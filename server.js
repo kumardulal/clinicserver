@@ -268,6 +268,6 @@ function updateDateOfLatestAdmission(patientId, date,) {
 
 
 
-app.listen(3003, () => {
-    console.log("running on 3003")
+app.listen(process.env.PORT || PORT, () => {
+    console.log(` Server running on ${PORT}`)
 });
